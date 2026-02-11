@@ -10,4 +10,4 @@ def move_randomly(n_times):
 while True:
     with bot.restore_focus():
         move_randomly(5)
-    bot.wait(10)
+    bot.wait(5*60)
