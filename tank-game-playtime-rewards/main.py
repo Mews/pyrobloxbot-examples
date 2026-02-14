@@ -26,11 +26,12 @@ def move_for_4_minutes():
 def open_tab_and_collect_rewards():
     bot.ui_navigate("down", "click", "left", "left", "click", "left", "click", "left", "click")
 
-total_diamonds = 0
-while True:
-    join_server_and_wait()
-    move_for_4_minutes()
-    open_tab_and_collect_rewards()
+if __name__ == "__main__":
+    total_diamonds = 0
+    while True:
+        join_server_and_wait()
+        move_for_4_minutes()
+        open_tab_and_collect_rewards()
 
-    total_diamonds += 1250
-    print("Diamonds farmed:", total_diamonds)
+        total_diamonds += 1250
+        print("Diamonds farmed:", total_diamonds)

@@ -7,7 +7,8 @@ def move_randomly(n_times):
         d = random.choice(directions)
         bot.walk(d, duration=1)
 
-while True:
-    with bot.restore_focus():
-        move_randomly(5)
-    bot.wait(5*60)
+if __name__ == "__main__":
+    while True:
+        with bot.restore_focus():
+            move_randomly(5)
+        bot.wait(5*60)

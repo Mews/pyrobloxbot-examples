@@ -56,21 +56,22 @@ def store_fruit():
     bot.reset_player()
 
 
-setup_camera_angle()
-while True:
-    while not raid_going_on():
-        move_randomly()
-        bot.wait(1)
+if __name__ == "__main__":
+    setup_camera_angle()
+    while True:
+        while not raid_going_on():
+            move_randomly()
+            bot.wait(1)
 
-    print(f"Raid started at: {datetime.datetime.now()}")
+        print(f"Raid started at: {datetime.datetime.now()}")
 
-    bot.reset_player()
-    bot.wait(5)
+        bot.reset_player()
+        bot.wait(5)
 
-    walk_to_factory_door()
+        walk_to_factory_door()
 
-    bot.wait(15)
+        bot.wait(15)
 
-    kill_core()
+        kill_core()
 
-    store_fruit()
+        store_fruit()
