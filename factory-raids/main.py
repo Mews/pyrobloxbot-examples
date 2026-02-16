@@ -1,6 +1,5 @@
 import pyrobloxbot as bot
 import random
-import pyautogui
 import datetime
 
 def move_randomly():
@@ -40,7 +39,7 @@ def kill_core():
     bot.equip_slot(3)
     
     for _ in range(100):
-        pyautogui.click()
+        bot.mouse_left_click()
 
 def store_fruit():
     bot.equip_slot(6)
