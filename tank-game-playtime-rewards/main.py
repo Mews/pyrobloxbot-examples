@@ -24,7 +24,9 @@ def move_for_4_minutes():
 
 
 def open_tab_and_collect_rewards():
+    bot.toggle_ui_navigation()
     bot.ui_navigate("down", "click", "left", "left", "click", "left", "click", "left", "click")
+    # No need to toggle it back off, we're leaving the server right after
 
 if __name__ == "__main__":
     total_diamonds = 0
