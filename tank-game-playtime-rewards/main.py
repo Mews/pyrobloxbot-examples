@@ -12,8 +12,7 @@ def join_server_and_wait():
     while is_in_server():
         pass
 
-    while not is_in_server():
-        pass
+    bot.wait_for_image("index_button.png")
 
 
 def move_for_4_minutes():
